@@ -1,0 +1,99 @@
+body {
+  background-color: #ecf0f1;
+  font-family: "Balthazar", serif;
+}
+
+#container {
+  grid-gap: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#title {
+  font-size: 100;
+  display: grid;
+  justify-content: start;
+  color: #3498db;
+}
+
+#input {
+  width: 70%;
+  padding: 10px;
+  font-size: 1.5vw;
+}
+
+button {
+  background-color: #3498db;
+  border: 1px solid #2980b9;
+  box-shadow: 1px 1px 5px #2c3e50;
+  cursor: pointer;
+}
+
+#twit {
+  padding-bottom: 5px;
+  width: 25%;
+  background-color: #3498db;
+  border: 1px solid #2980b9;
+  box-shadow: 1px 1px 5px #2c3e50;
+  cursor: pointer;
+  font-size: 2.5vw;
+}
+
+#posts {
+  display: grid;
+}
+
+.postAndComment {
+  word-break: break-all;
+  width: 50%;
+  display: grid;
+  border: 2px solid #2980b9;
+  box-shadow: 1px 1px 5px #2c3e50;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "a" "b";
+  padding: 5px;
+  margin: 5px;
+  position: relative;
+}
+
+.post {
+  font-size: x-large;
+  display: grid;
+  grid-area: "a";
+  color: #2980b9;
+  margin-top: 10px;
+}
+
+.c {
+  font-size: larger;
+  margin: 5%;
+  grid-area: "b";
+  color: cadetblue;
+  position: relative;
+}
+
+.comment {
+  position: relative;
+}
+
+p {
+  font-size: large;
+  color: #000;
+}
+
+.delete {
+  color: red;
+  display: inline;
+  cursor: pointer;
+}
+
+.cmt {
+  position: absolute;
+  left: -5%;
+}
+
+.pst {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
